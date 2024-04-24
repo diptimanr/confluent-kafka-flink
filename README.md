@@ -1,0 +1,1 @@
+End to end demo with a set of sensor devices emitting readings to Confluent Cloud Kafka, followed by data stream processing using Confluent FlinkSQL, then transport using Confluent Elasticsearch Connector and a real time dashboard built using Elastic Cloud Kibana
