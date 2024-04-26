@@ -3,7 +3,7 @@ import time
 import cc_config
 
 from confluent_kafka import Producer
-from confluent_kafka.serialization import StringSerializer, SerializationContext, MessageField
+from confluent_kafka.serialization import SerializationContext, MessageField
 from confluent_kafka.schema_registry import SchemaRegistryClient
 from confluent_kafka.schema_registry.avro import AvroSerializer
 
@@ -52,7 +52,7 @@ def reading_to_dict(reading, ctx):
         dict: Dict populated with sensor device reading attributes to be serialized.
     """
 
-    # User._address must not be serialized; omit from dict
+
     return dict(device_id=reading.device_id,
                 co=reading.co,
                 humidity=reading.humidity,
