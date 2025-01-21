@@ -1,0 +1,46 @@
+{
+    "name": "Reading",
+    "type": "record",
+    "fields": [
+        {
+            "name": "device_id",
+            "type": "string"
+        },
+        {
+            "name": "co",
+            "type": "float",
+            "logicalType": "decimal",
+            "precision": "2",
+            "scale": 2
+        },
+        {
+            "name": "humidity",
+            "type": "float",
+            "logicalType": "decimal",
+            "precision": "2",
+            "scale": 2
+        },
+        {
+            "name": "motion",
+            "type": "boolean"
+        },
+        {
+            "name": "temp",
+            "type": "float",
+            "logicalType": "decimal",
+            "precision": "2",
+            "scale": 2
+        },
+        {
+            "name": "ampere_hour",
+            "type": "float",
+            "logicalType": "decimal",
+            "precision": "2",
+            "scale": 2
+        },
+        {
+            "name": "device_ts",
+            "type": "long"
+        }
+    ]
+}
